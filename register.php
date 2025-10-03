@@ -26,4 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error" .$sql.$conn->error;
 } 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 095cdc4da45f713ffff2fcdb9f9024469088a5af
 ?>

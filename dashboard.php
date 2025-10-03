@@ -1,7 +1,11 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
+<<<<<<< HEAD
     header("Location: dashboard.html"); 
+=======
+    header("Location: login.html"); // redirect if not logged in
+>>>>>>> 095cdc4da45f713ffff2fcdb9f9024469088a5af
     exit();
 }
 ?>

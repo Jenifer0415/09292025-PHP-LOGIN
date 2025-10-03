@@ -8,7 +8,10 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 095cdc4da45f713ffff2fcdb9f9024469088a5af
   <div class="container" id="container">
 
 
@@ -25,7 +28,10 @@
     </div>
 
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> 095cdc4da45f713ffff2fcdb9f9024469088a5af
     <!-- Sign Up (Register) Form -->
     <div class="form-container sign-up-container">
       <form action="register.php" method="POST" >
