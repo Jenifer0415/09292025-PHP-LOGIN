@@ -14,20 +14,21 @@
 
     <!-- Sign In (Login) Form -->
     <div class="form-container sign-in-container">
-      <form action="#">
+      <form action="connect.php">
         <h1>Login</h1>
         <span>Use your account to log in</span>
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <input type="password" name="password" placeholder="Enter your password" required />
+        <input type="email" name="email" placeholder="Enter your email" >
+        <input type="password" name="password" placeholder="Enter your password" >
         <a href="#">Forgot your password?</a>
         <button type="submit">Log In</button>
       </form>
     </div>
 
 
+    
     <!-- Sign Up (Register) Form -->
     <div class="form-container sign-up-container">
-      <form action="#">
+      <form action="register.php" method="POST" >
         <h1>Join Us!</h1>
         <div class="social-container">
           <a href="#" class="social"><img src="images/fb.jpg" alt="Facebook"></a>
@@ -35,9 +36,9 @@
           <a href="#" class="social"><img src="images/in.JPG" alt="LinkedIn"></a>
         </div>
         <span>Use your email to sign up</span>
-        <input type="text" name="name" placeholder="Enter your name" required />
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <input type="password" name="password" placeholder="Create Password" required />
+        <input type="text" name="name" placeholder="Enter your name" required/>
+        <input type="email" name="email" placeholder="Enter your email" required/>
+        <input type="password" name="password" placeholder="Create Password" required/>
         <button type="submit">Register</button>
       </form>
     </div>
