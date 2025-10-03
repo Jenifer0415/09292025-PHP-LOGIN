@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <div class="container" id="container">
+
+
+    <!-- Sign In (Login) Form -->
+    <div class="form-container sign-in-container">
+      <form action="connect.php">
+        <h1>Login</h1>
+        <span>Use your account to log in</span>
+        <input type="email" name="email" placeholder="Enter your email" >
+        <input type="password" name="password" placeholder="Enter your password" >
+        <a href="#">Forgot your password?</a>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+
+
+    <!-- Sign Up (Register) Form -->
+    <div class="form-container sign-up-container">
+      <form action="register.php" method="POST" >
+        <h1>Join Us!</h1>
+        <div class="social-container">
+          <a href="#" class="social"><img src="images/fb.jpg" alt="Facebook"></a>
+          <a href="#" class="social"><img src="images/ins.PNG" alt="Instagram"></a>
+          <a href="#" class="social"><img src="images/in.JPG" alt="LinkedIn"></a>
+        </div>
+        <span>Use your email to sign up</span>
+        <input type="text" name="name" placeholder="Enter your name" required/>
+        <input type="email" name="email" placeholder="Enter your email" required/>
+        <input type="password" name="password" placeholder="Create Password" required/>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+
+    <!-- Overlay Panels -->
+    <div class="overlay-container">
+      <div class="overlay">
+       
+        <!-- Overlay Left -->
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <img src="images/wlc-Photoroom.png" alt="Hello" style="width:200px; margin:20px 0;">
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+       
+        <!-- Overlay Right -->
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <img src="images/h-Photoroom.png" alt="Welcome" style="width:200px; height:150px; margin:30px 0;">
+          <p>Enter your personal details and start your journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- JavaScript Toggle -->
+  <script>
+    const signUpButton = document.getElementById("signUp");
+    const signInButton = document.getElementById("signIn");
+    const container = document.getElementById("container");
+
+
+    signUpButton.addEventListener("click", () => {
+      container.classList.add("right-panel-active");
+    });
+
+
+    signInButton.addEventListener("click", () => {
+      container.classList.remove("right-panel-active");
+    });
+  </script>
+
+
+</body>
+</html>
+
+
+
+
